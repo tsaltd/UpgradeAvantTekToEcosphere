@@ -1,0 +1,1 @@
+﻿var avantValidEmailApp = angular.module('avantValidEmailApp', []);

@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex;
+
+<style>
+img{
+    max-width: 100%;
+    height:auto;
+    vertical-align: bottom;
+}
+
+</style>
+<!--/////////// HEADER SECTION //////////-->
+
+<section id="intro" style="border-style: solid;
+                            border-color: #F1F1FF;
+                            border-top-width: 7px;
+                            border-left-width: 7px;
+                            border-bottom-width: 15px;
+                            border-right-width: 7px;">
+    <div class="d-flex" style="
+        padding-bottom: 10px;
+        padding-top: 25px;">
+            <div class="intro-well wow animated bounceIn">
+                <div class="d-flex">
+                    <div>
+                        <h1>The AvantTek Solution</h1>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<!-- LAUNCH VERSION COMMENT START -->
+<!-- ////////// FEATURES SECTION ////////// -->
+<section id="features">
+    <div style="visibility: visible; animation-name: fadeIn;" class="wow fadeIn  animated">
+                <!-- <div class="d-flex">
+                    <h1 Style="padding-bottom: 35px; color: black;font-size: 21px;font-weight: 300;">AvantTek  --  All About Advanced Technology</h1>
+                 </div> -->
+                 <div class="d-flex justify-content-center">  
+                     <h1 style="padding-bottom: 35px; color: black; font-size: 27px;">Exploring the Frontiers of Technology</h1>
+                </div>
+    </div>
+    <!-- <DIV CLASS="d-flex flex-column justify-content-center"> -->
+    <DIV class="d-flex flex-column justify-content-center">
+        <div>
+            <img src="~/Red/img/mobileWordCloud.PNG" alt="tools" class="img-fluid d-flex flex-column "/>
+            <img src="~/Red/img/mobileEther.png" alt="tools" class="img-fluid d-flex flex-column "/>
+            <img src="~/Red/img/mobileEther.png" alt="tools" class="d-flex flex-column justify-column-center" />
+            <!-- <img src="~/Red/img/mobileAzure.png" alt="Azure" class="d-flex flex-column justify-column-center" />    -->
+    </div>   
+    <DIV class="d-flex flex-column justify-content-center">
+                <img src="~/Red/img/WordCloudAlpha02$$.PNG" alt="Tools" class="img-fluid"/>     
+                <img src="~/Red/img/redEthBeta$01.png" alt="Ethereum" class="img-fluid"/> 
+                <img src="~/Red/img/HelloAzureAlpha02.png" alt="Azure" class=img-fluid />     
+    </DIV>
+
+    <DIV CLASS="d-flex flex-column justify-content-center">
+        
+        <div>
+            <img src="~/Red/img/WordCloudAlpha02$$.PNG" alt="Tools" class="d-flex flex-column justify-content-center"/>
+                        <img src="~/Red/img/redEthBeta$01.png" alt="Tools"/>
+        </div>
+        <div>
+            <img src="~/Red/img/HelloAzureAlpha02.png" alt="Tools" class="justify-content-center"/>
+        </div >
+    </DIV>
+
+    </DIV>
+</section>
+<!--////////// NEWSLETTER SECTION ////////// -->
+<section id="newsletter" ng-app="app-email" class="d-flex flex-column">
+    <div class="wow animated fadeInDown d-flex flex-column justify" ng-controller="emailController as vm">
+        <div class="d-flex flex-column justify-content-center">
+            <h3>Your'e early ... Not quite ready yet .... Post your email for more </h3>
+        </div>
+        <div class="d-flex flex-column justify-content-center">
+             <h3>
+                 <a asp-controller="Home" asp-action="tc">Home</a>
+            </h3>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div ID="emailtest" style="padding-top: 75px" class="ng-app">
+                <form novalidate name="myForm" class="form-inline" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
+                            <input type="email" name="input" class="input-sm ng-pristine ng-empty ng-valid-email ng-invalid ng-invalid-required ng-touched" ng-model="vm.email.text" required="" style="
+                                height: 45px; width: 190px;">
+                            <button ng-click='validateEmail()' type="submit" class="btn btn-primary">Send Me Updates</button>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div id="emErr" ng-show="myForm.input.$invalid && myForm.input.$dirty" style="font-size: 20px">A valid email is required</div>
+        </div>
+    </div> 
+</section>
+<!--////////// FOOTER SECTION ////////// -->
+
+<footer class="d-flex justify-content-center">
+    <p>
+        Copyright © 2015 Flati. Made with <i class="fa fa-heart footer-heart"></i> by Themeberry
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
+</script>

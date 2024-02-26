@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex;
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+</style>
+<section id="intro" class="intro-well d-flex flex-row justify-content-center" style="padding-top: 60px;padding-bottom: 65px;">
+    <div class="d-flex flex-column justify-content-center">
+        <h1>DeCentralized Platforms</h1>
+        <!-- <h1>Adventures in Digital Transformation<h1> -->
+        <div id="avantCust" class="d-flex d-row" style="margin-top: 20px;margin-bottom: 7px;">
+            Creating Digital EcoSystems
+        </div>
+    </div>
+</section>
+<section style="padding-top: 10px">
+    <div ID="WTF" class="d-flex justify-content-center">
+        <p class="icntitle p-2 m-4" style="color: #00bcf2; font-weight: 400; font-size: 38px">
+            Distributed Ledger Components
+        </p>
+    </div>
+    <div class="d-flex justify-content-center flex-wrap">
+        <button class="btn btn-link justify-content-center p" type="button" id="DevButton">Dev Tools</button>
+        <button class="btn btn-link justify-content-center p" type="button" id="InfoButton">Information Management</button>
+        <button class="btn btn-link justify-content-center p" type="button" id="CloudButton">Cloud Hosting</button>
+    </div>
+</section>
+ <section id="features" style="padding-top: 40px">
+            <div>
+                <div id="picTools">
+                 <picture class="d-flex flex-row justify-content-center">
+                    <source media="(min-width: 700px)" srcset="/Red/img/WordCloud.png">
+                    <source media="(min-width: 200px)" srcset="/Red/img/mobileWordCloud.PNG">
+                         <img src="/Red/img/mobileWordCloud.PNG" alt="Tools" />
+                 </picture>
+                 </div>
+                <div class="collapse" id="collapseExample01">
+                    <div class="card card-body d-flex">
+                        <h4 class="card-title d-flex justify-content-center">Modern Web Tools</h4>
+                        <div class="card-text d-flex justify-content-center">
+                            <div class="d-flex w-25"></div>
+                                <div style="font-size: 15px" class="d-flex justify-content-center icnp">
+                                   Every day software engineering companies release new and innovative tools for the digital ledger technology based eco‑systems of mobile apps, www experiences, IOT solutions and enterprise applications.<br>AvantTek has evaluated and curated a set of these tools for our solutions workbench.
+                            </div>                         
+                            <div class="d-flex w-25"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link justify-content-end">x</a>
+                    </div>
+                </div>
+                <div id="picEth01">
+                <picture id="EthPic" class="d-flex flex-row justify-content-center">
+                    <source media="(min-width: 700px)" srcset="/Red/img/ether.PNG">
+                    <source media="(min-width: 200px)" srcset="/Red/img/mobileEther.PNG">
+                    <img src="/Red/img/mobileEther.PNG" alt="Ethereum" />
+                </picture>
+                </div>
+                <div class="collapse" id="collapseExample02">
+                    <div class="card card-body d-flex">
+                        <h4 class="card-title d-flex justify-content-center">Card title</h4>
+                        <div class="card-text d-flex justify-content-between">
+                            <div class="d-flex w-15"></div>
+                            <div class="d-flex w-70 justify-content-center">Some example text. Some example text.Some example text. Some example text.Some example text. Some example text.Some example text. Some example text.</div>
+                            <div class="d-flex w-15"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link justify-content-end">x</a>
+            </div> 
+            <div ID="picCloud01">
+                <picture class="d-flex flex-row justify-content-center">
+                        <source media="(min-width: 700px)" srcset="/Red/img/Azure.png">
+                        <source media="(min-width: 200px)" srcset="/Red/img/mobileAzure.PNG">
+                        <img src="/Red/img/mobileAzure.PNG" alt="Cloudy"/>
+                </picture>
+            </div>
+            <div class="collapse" id="collapseExample03">
+                    <div class="card card-body d-flex">
+                        <h4 class="card-title d-flex justify-content-center">Card title</h4>
+                        <div class="card-text d-flex justify-content-between">
+                            <div class="d-flex w-25"></div>
+                            <div class="d-flex w-50 justify-content-center">Some example text. Some example text.Some example text. Some example text.Some example text. Some example text.Some example text. Some example text.</div>
+                            <div class="d-flex w-25"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="d-flex card-link justify-content-center">close</a>
+                </div>
+            </div>
+        </section>
+<footer class="d-flex justify-content-center m-3" style="padding-top: 25px; padding-bottom: 25px">
+    <p>
+        AvantTek Solutions Inc.  New York, NY
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
+</script>

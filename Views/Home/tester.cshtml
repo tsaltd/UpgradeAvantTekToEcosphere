@@ -1,0 +1,150 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex;
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+</style>
+<section id="intro" class="intro-well wow d-flex flex-row animated bounceIn justify-content-center" style="padding-top: 60px;padding-bottom: 65px;">
+    <div class="d-flex flex-column justify-content-center">
+        <h1>DeCentralized Platforms</h1>
+        <!-- <h1>Adventures in Digital Transformation<h1> -->
+        <div id="avantCust" class="d-flex d-row" style="margin-top: 20px;margin-bottom: 7px;">
+            Creating Digital EcoSystems
+        </div>
+    </div>
+</section>
+<section id="features" style="padding-top: 10px">
+     <div class="container"></div>
+        @* <span lass="d-flex flex-col justify-content-center white-font pt-5"id="header-1">Platforms for Transformation</span> *@
+        <span class="d-flex icntitle flex-row justify-content-center icntitle m-5 p-5" style="font-size: 38px">Distributed Ledger</span>
+    </div> 
+    <div>
+        <picture class="d-flex flex-row justify-content-center">
+            <source media="(min-width: 700px)" srcset="~/Red/img/WordCloud.png">
+            <source media="(min-width: 200px)" srcset="~/Red/img/mobileWordCloud.PNG">
+            <img src="~/Red/img/mobileWordCloud.PNG" alt="Tools" />
+        </picture>
+        
+        <picture class="d-flex flex-row justify-content-center">
+            <source media="(min-width: 700px)" srcset="~/Red/img/ether.PNG">
+            <source media="(min-width: 200px)" srcset="~/Red/img/mobileEther.PNG">
+            <img src="~/Red/img/mobileEther.PNG" alt="Ethereum" />
+        </picture>
+
+        
+        <picture class="d-flex flex-row justify-content-center">
+            <source media="(min-width: 700px)" srcset="~/Red/img/Azure.png">
+            <source media="(min-width: 200px)" srcset="~/Red/img/mobileAzure.PNG">
+             <img src="~/Red/img/mobileAzure.PNG" alt="Cloudy">
+        </picture>
+        
+    </div>
+</section>
+
+<!--//////////  SECTION ////////// -->
+@* <section id="newsletter" ng-app="app-email" class="d-flex flex-column" style="background: white"> *@
+
+@* <section style="background-color: white"> *@
+<section>
+    <div class="container" style="background: white">
+        <div style="
+             background-color: #808080;
+             border-style: solid;
+             border-color: black;
+             border-bottom-width: 1px;">
+            <h3 id="header-1" class="d-flex flex-column text-center" style="color: white;margin-bottom: 15px; margin-top: 30px;">Blockchain Ledgers</h3>
+            <h3 id="header-2" class="d-flex flex-column text-center" style="color: white;margin-bottom: 30px; margin-top: 0px;">Transforming Information Management</h3> 
+        </div>
+        <div id="header-2" class="d-flex flex-column text-center" style="color: black;margin-bottom: 30px; margin-top: 30px;"></div>
+        <div class="row"></div>
+            <!-- /.col-md-6 -->
+        @* <image left *@
+          <div id="header-1" class="col-md-6">
+                <img src="~/Red/img/disintweb.png" alt="" class="w-100" />
+            </div>
+            <div class="col-md-6">
+                <div class="row align-items-center h-100">
+                    <div class="col">
+                        <h1 class="display-3 info" style="margin-bottom: 1px">Disintermediation</h1>
+
+                        <h1 class="lead info">
+                            The blockchain distirbut>ed database results in disintermediation -- a reduction in the use of intermediaries between producers and consumers.  Benefits of disintermediation include:  No single point of failure in the network, no central administrative authority</p>
+                            <br /><br />
+                            <a href="" class="info">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+        <!--  image right  -->
+        <div class="row">
+            <div class="col-md-6 order-md-6">
+                <img src="~/Red/img/IMMUTDEF.png" alt="" class="w-100" />
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6 order-md-1">
+
+                <div class="row align-items-center h-100">
+                    <div class="col">
+                        <h1 class="header-1 info">Immutability</h1>
+                        <P class="lead info">Once transactions are committed to a blockchain database they are very hard to change, almost impossible.  Data stored on the blockchain is generally considered incoruptible</p>
+                            <br />
+                            <a href="" class="info">Learn More</a>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+
+        </div>
+        <!-- /.row -->
+        <!--  image left  -->
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/Red/img/tamper-proof$.jpg" alt="" class="w-100" />
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+                <div class="row align-items-center h-100">
+                    <div class="col">
+                        <div class="display-3 info header1" style="margin-bottom: 1px">TamperProof</div>
+                        <h1 class="display-3 info" style="margin-top: 3px">Non&#8209;Repudiation</h1>
+                        <p class="lead info">
+                            Blockchain platforms use advanced hashing and encryption methods to guarantee transactions and blocks cannot be tampered with during creation and are immutible after being committed to the chain. Encrypted digital signatures insure non&#8209;repudiation -- the assurance that blockchain object creators cannot successfully dispute block or transaction authorship
+                        </p>
+                            <br />
+                            <a href="" class="info">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+        <!--  image right  -->
+        <!-- /.row -->
+
+    </div>
+    @*end container above*@
+</section>
+<footer class="d-flex justify-content-center" style="padding-top: 25px; padding-bottom: 25px">
+    <p>
+        AvantTek Solutions Inc.  New York, NY
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
+</script>

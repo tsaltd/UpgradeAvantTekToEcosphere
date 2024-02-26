@@ -1,0 +1,31 @@
+718 762 7669
+
+
+19256368c 
+
+
+ @media screen and (max-width: 3000px) {
+	#header-1 {
+	  font-size: 45px;
+	}
+	@media screen and (max-width: 765px) {
+		#header-1 {
+		  font-size: 33px;
+		}
+	  }
+	@media screen and (max-width: 560px) {
+		#header-1 {
+		  font-size: 27px;
+		}
+	}
+	@media screen and (max-width: 489px) {
+		#header-1 {
+		  font-size: 23px;
+		}
+	}
+	@media screen and (max-width: 417px) {
+		#header-1 {
+		  font-size: 20px;
+		}
+	}
+}

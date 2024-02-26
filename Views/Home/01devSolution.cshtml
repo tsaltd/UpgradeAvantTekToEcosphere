@@ -1,0 +1,163 @@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex;
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+</style>
+<!--/////////// HEADER SECTION //////////-->
+@* <section id="intro" class="intro-well wow d-flex flex-row justify-content-center" style="padding-top: 60px;padding-bottom: 65px;"> *@
+<section id="intro" class="intro-well d-flex flex-row justify-content-center" style="padding-top: 25px;padding-bottom: 5px;">
+    <div class="d-flex flex-column justify-content-center" style="padding-top: 0px; padding-bottom: 0px">
+        <h1 style="padding-bottom: 30px">The AvantTek Solution</h1> 
+        </div>
+</section>
+<!-- ////////// FEATURES SECTION ////////// -->
+<section id="features" style="padding-top: 22px">
+    <div>
+        <picture class="d-flex flex-row justify-content-center" style="margin-bottom: 15px; margin-top: 20px">
+            <source media="(min-width: 700px)" srcset="~/Red/img/WordCloud.png">
+            <source media="(min-width: 200px)" srcset="~/Red/img/mobileWordCloud.PNG">
+            <img src="~/Red/img/mobileWordCloud.PNG" alt="Tools" />
+        </picture>
+        <picture class="d-flex flex-row justify-content-center" style="margin-bottom: 15px">
+            <source media="(min-width: 700px)" srcset="~/Red/img/ether.PNG">
+            <source media="(min-width: 200px)" srcset="~/Red/img/mobileEther.PNG">
+            <img src="~/Red/img/mobileEther.PNG" alt="Ethereum" />
+        </picture>
+
+        <picture class="d-flex flex-row justify-content-center" style="margin-bottom: 15px">
+            <source media="(min-width: 700px)" srcset="~/Red/img/Azure.png">
+            <source media="(min-width: 200px)" srcset="~/Red/img/mobileAzure.PNG">
+             <img src="~/Red/img/mobileAzure.PNG" alt="Cloudy" style="padding-bottom: 22px;">>
+        </picture>
+    </div>
+</section>
+
+<!--//////////  SECTION ////////// -->
+@* <section id="newsletter" ng-app="app-email" class="d-flex flex-column" style="background: white"> *@
+<section id="newsletter" ng-app="app-email" class="d-flex flex-column ng-scope" style="background: white;padding-bottom: 25px;padding-top: 25px;">
+    <div class="d-flex flex-row justify-content-center" ng-controller="emailController as vm">
+        <p class="icntitle d-flex flex-row" style="color: black; padding-top: 15px; padding-bottom:30px; margin-bottom:5px; font-size: 38px">Solution Components</p>
+        @* <p class="icntitle d-flex flex-row" style="color: black;padding-top: 20px;padding-bottom: 25px;margin-bottom:5px;font-size: 38px;">Solution Components</p> *@
+    </div>   
+    <div class="d-flex px-5 flex-row justify-content-around my-3 flex-wrap">
+        <div class="callOuts d-flex flex-column flex-fill p-4 mx-2 my-2 my-lg-1 text-center">
+            <img src="~/Red/img/modweb.png" class="img-fluid mx-auto d-block">
+            <h3 style="color: black">Modern Web</h3>
+            @* <p>Get your climbing gmodWebear for the season.</p> *@
+        </div>
+        <div class="callOuts d-flex flex-column flex-fill p-4 mx-2 my-2 my-lg-1 text-center">
+            <img src="~/Red/img/SmartContractDev.png" class="img-fluid mx-auto d-block">
+            <h3 style="color: black">D-Apps</h3>
+            @* <p>Run from your troubles with these shoes.</p> *@
+        </div>
+        <div class="callOuts d-flex flex-column flex-fill p-4 mx-2 my-2 my-lg-1 text-center">
+            <img src="~/Red/img/img_Cloud.simple.png" class="img-fluid mx-auto d-block">
+            <h3 style="color: black">Cloud</h3>
+        </div>
+     </div>
+</section>
+<section style="background-color: white">
+    <div class="container" style="background: white">
+        <h1 class="text-center" style="color: black;margin-bottom: 85px;">Why Not a Database ?</h1>
+        @* <image left *@
+        <div class="row">
+            <div class="col-md-6">
+
+                <img src="~/Red/img/disintweb.png" alt="" class="w-100" />
+            </div>
+            <div class="col-md-6">
+
+                <div class="row align-items-center h-100">
+                    <div class="col">
+                        <h1 class="display-3 info">Disintermediation</h1>
+                        <P class="lead info">The blockchain distirbuted database results in disintermediation -- a reduction in the use of intermediaries between producers and consumers.  Benefits of disintermediation include:  No single point of failure in the network, no central administrative authority</p>
+                            <br /><br />
+                            <a href="" class="info">Learn More</a>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+
+        </div>
+        <!-- /.row -->
+        <!--  image right  -->
+        <div class="row">
+            <div class="col-md-6 order-md-6">
+                <img src="~/Red/img/IMMUTDEF.png" alt="" class="w-100" />
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6 order-md-1">
+
+                <div class="row align-items-center h-100">
+                    <div class="col">
+                        <h1 class="display-3 info">Immutability</h1>
+                        <P class="lead info">Once transactions are committed to a blockchain database they are very hard to change, almost impossible.  Data stored on the blockchain is generally considered incoruptible</p>
+                            <br /><br />
+                            <a href="" class="info">Learn More</a>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+
+        </div>
+        <!-- /.row -->
+        <!--  image left  -->
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/Red/img/tamper-proof$.jpg" alt="" class="w-100" />
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+
+                <div class="row align-items-center h-100">
+                    <div class="col">
+                        <h1 class="display-3 info" style="margin-bottom: 1px">TamperProof</h1>
+                        <h1 class="display-3 info" style="margin-top: 3px">Non&#8209;Repudiation</h1>
+                        <p class="lead info">
+                            Blockchain platforms use advanced hashing and encryption methods to guarantee transactions and blocks cannot be tampered with during creation and are immutible after being committed to the chain. Encrypted digital signatures insure non&#8209;repudiation -- the assurance that blockchain object creators cannot successfully dispute block or transaction authorship
+                        </p>
+                            <br /><br />
+                            <a href="" class="info">Learn More</a>
+                        </p> 
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+
+        </div>
+        <!-- /.row -->
+        <!--  image right  -->
+        <!-- /.row -->
+
+    </div>
+
+    @*end container above*@
+</section>
+<footer class="d-flex justify-content-center" style="padding-top: 25px; padding-bottom: 25px">
+    <p>
+        AvantTek Solutions Inc.  New York, NY
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
+</script>

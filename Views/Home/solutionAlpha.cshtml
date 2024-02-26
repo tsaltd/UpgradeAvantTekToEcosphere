@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex;
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+</style>
+<section id="intro" class="intro-well d-flex flex-row justify-content-center" style="padding-top: 60px;padding-bottom: 65px;">
+    <div class="d-flex flex-column justify-content-center">
+        <h1>DeCentralized Processing</h1>
+        <!-- <h1>Adventures in Digital Transformation<h1> -->
+        <div class="d-flex d-row justify-content-center" style="margin-top: 20px;margin-bottom: 7px;">
+            <DIV id="avantCust" >Creating Digital EcoSystems</div>
+        </div>
+    </div> 
+</section>
+<section style="padding-top: 10px">
+    <div class="d-flex justify-content-center">
+        <p class="icntitle p-2 m-4" style="color: #00bcf2; font-weight: 400; font-size: 38px">
+            Platform Components
+        </p>
+    </div>
+    <div class="d-flex justify-content-center flex-wrap">
+        <button class="btn btn-link justify-content-center p" type="button" id="DevButton">Dev Tools</button>
+        <button class="btn btn-link justify-content-center p" type="button" id="InfoButton">Distributed Ledger</button>
+        <button class="btn btn-link justify-content-center p" type="button" id="CloudButton">Cloud Hosting</button>
+    </div>
+</section>
+ <section id="features" style="padding-top: 40px">
+        <div id="picTools">
+            <picture class="d-flex flex-row justify-content-center">
+                <source media="(min-width: 700px)" srcset="/Red/img/wordCloud.png">
+                <source media="(min-width: 200px)" srcset="/Red/img/mobileWordCloud.PNG">
+                <img class="cpoint" src="/Red/img/mobileWordCloud.PNG" alt="Tools" />
+            </picture>
+         </div>
+        <div class="collapse" id="collapseExample01">
+             <div class="card card-body d-flex">
+            <h4 class="card-title d-flex justify-content-center">Modern Web Tools</h4>
+            <div class="card-text d-flex justify-content-center">
+                <div class="d-flex w-15"></div>
+                <div style="font-size: 15px" class="d-flex w-70 justify-content-center icnp">
+                    The release of new and innovative tools for creating mobile apps, www experiences, IOT solutions, and enterprise applications on de&#8209;centralized ledger platforms continues to grow at a phenomenal rate.<br><br>AvantTek evaluates and curates these tools and technologies for our developer's workbench and delivers news, overviews, and drill&#8209;downs on these systems development essentials for
+                    today's modern digital eco&#8209;systems.</div>                         
+                </div>
+                <div class="d-flex w-15"></div>
+            </div>
+            <a href="#" class="card-link justify-content-end">x</a>
+        </div>
+        <div id="picEth01" >
+                <picture id="EthPic" class="d-flex flex-row justify-content-center">
+                    <source media="(min-width: 700px)" srcset="/Red/img/ether.PNG">
+                    <source media="(min-width: 200px)" srcset="/Red/img/mobileEther.PNG">
+                    <img class="cpoint" src="/Red/img/mobileEther.PNG" alt="Ethereum" />
+                </picture>
+            </div>
+            <div class="collapse" id="collapseExample02">
+                    <div class="card card-body d-flex">
+                        <h4 class="card-title d-flex justify-content-center">Blockchain</h4>
+                        <div class="card-text d-flex justify-content-between">
+                            <div class="d-flex w-15"></div>
+                            @* <div style="font-size: 15px" class="d-flex w-75 icnp mb">
+                            In 2015 Ethereum was introduced as a breakthrough alternative to BitCoin's crypto&#8209;currency de&#8209;centralized ledger.  Ethereum extended the crypto blockchain foundation: de&#8209;centralizated, immutabile, and tamper&#8209;proof to create a new class of blockchain platform that understands programming languages. Ethereum transactions are processed by programs known as smart contracts.<br>The integration of the dev tools at the top of our solution’s stack with canonical blockchain features and smart contract programmability has enabled customization of the Ethereum ledger to create systems that are re&#8209;shaping the operations of supply chains, parts of the fin&#8209;tech world, real estate, and a host of other industries.<br>That integration of Web3 tools, blockchain architecture, and smart contracts is at the heart of our digital transformation adventure/
+                            </div> *@
+                            <div style="font-size: 15px" class="d-flex w-75 icnp mb">
+                                <div class="d-flex flex-column bd-highlight mb-3">
+                                    <div class="p-2 bd-highlight">In 2015 Ethereum was introduced as a breakthrough alternative to BitCoin's crypto&#8209;currency de&#8209;centralized ledger.</div>
+                                    <div class="p-2 bd-highlight">Ethereum extended the crypto blockchain foundation: &nbsp;<U>DE&#8209;CENTRALIZED</U>, &nbsp;&nbsp;<U>IMMUTIBLE</U>, and &nbsp;&nbsp;<U>TAMPER&#8209;PROOF</U> to create a new class of blockchain platform that understands programming languages.  "Smart contract" program code .</div>
+                                    <div class="p-2 bd-highlight">The integration of the dev tools at the top of our solution’s stack with canonical blockchain features and smart contract programmability has enabled customization of the Ethereum ledger to create systems that are re&#8209;shaping the operations of supply chains, parts of the fin&#8209;tech world, real estate, and a host of other industries.</div>
+                                    <div class="p-2 bd-highlight">That integration of Web3 tools, blockchain architecture, and smart contracts is at the heart of our digital transformation adventure</div>
+                            </div>
+                            @* In 2015 Ethereum was introduced as a breakthrough alternative to BitCoin's crypto&#8209;currency de&#8209;centralized ledger.  Ethereum extended the crypto blockchain foundation: de&#8209;centralizated, immutabile, and tamper&#8209;proof to create a new class of blockchain platform that understands programming languages. Ethereum transactions are processed by programs known as smart contracts.<br>The integration of the dev tools at the top of our solution’s stack with canonical blockchain features and smart contract programmability has enabled customization of the Ethereum ledger to create systems that are re&#8209;shaping the operations of supply chains, parts of the fin&#8209;tech world, real estate, and a host of other industries.<br>That integration of Web3 tools, blockchain architecture, and smart contracts is at the heart of our digital transformation adventure*@
+                            </div>
+                            <div class="d-flex w-15"></div>
+                        </div>
+                    </div>
+            </div>
+        <div ID="picCloud01">
+                <picture class="d-flex flex-row justify-content-center" >
+                        <source media="(min-width: 700px)" srcset="/Red/img/Azure.png">
+                        <source media="(min-width: 200px)" srcset="/Red/img/mobileAzure.PNG">
+                        <img class="cpoint" src="/Red/img/mobileAzure.PNG" alt="Cloudy"/>
+                </picture>
+            </div>
+        <div class="collapse" id="collapseExample03">
+                    <div class="card card-body d-flex">
+                        <h4 class="card-title d-flex justify-content-center">Card title</h4>
+                        <div class="card-text d-flex justify-content-between">
+                            <div class="d-flex w-15"></div>
+                            <div class="d-flex w-75 justify-content-center">
+                                Microsoft Azure in is an &#8209;the&#8209;cloud  state&#8209;of&#8209;the&#8209;art PaaS with advanced features for creating, administering and building blockchain solutions. Azure portal wizards simplify the process of creating and administering Ethereum solutions and  Microsoft publishes add&#8209;ins for VisualStudioCode to jump start the process of setting up an Ethereum network and for programming and testing smart contracts and developing dApps.<br><br>Getting up to speed on Ethereum on Azure is supported by Microsoft with hig&#8209;quality tools for coding and testing and a major library of entry level to advanced videos and documentation.<br><br>A great advantage of hosting Ethereum on Azure is access to other Azure based services such as Azure, Logic Apps and storage services like SQL Server or Cosmos DB.<br><br>Combine all the richly functional modern web development tools at the top of our stack with Ethereum and Azure and our pyramid becomes a robust galaxy of tools and technologies for developing transformative distributed ledger solutions
+                            </div>
+                            <div class="d-flex w-15"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="d-flex card-link justify-content-center">close</a>
+            </div>
+ </section>
+<footer class="d-flex justify-content-center m-3" style="padding-top: 25px; padding-bottom: 25px">
+    <p>
+        AvantTek Solutions Inc.  New York, NY
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+         
+    });
+</script> 

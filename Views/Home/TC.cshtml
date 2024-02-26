@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+@model Workspace.ViewModels.vmHomeIndex
+<!--/////////// HEADER SECTION //////////-->
+<section id="intro" style="border-style: solid;
+                            border-color: #F1F1FF;
+                            border-top-width: 7px;
+                            border-left-width: 7px;
+                            border-bottom-width: 15px;
+                            border-right-width: 7px;">
+
+<div class="container" style="
+    padding-bottom: 10px;
+    padding-top: 25px;">
+            <div class="intro-well wow animated bounceIn">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Hello AvantTek !!</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="margin-top: 20px;margin-bottom: 7px;">Adventures in Digital Transformation</h2>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="
+                             margin-bottom: 25px;
+                             margin-top: 0px;">Frameworks  &amp;  Tools --  Overviews  &  Drill-Downs</h2> 
+                </div>
+             </div>
+         </div>
+    </div>
+</section>
+<!--////////// FEATURES SECTION ////////// -->
+<section id="features">
+    <div style="visibility: visible; animation-name: fadeIn;" class="container wow fadeIn  animated">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="h2a">Frontiers of Technology Moving Fast !!!</div>
+                    <h2 style="padding-bottom: 35px;">Frontiers of Technology Moving Fast !!!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 style="padding-bottom: 35px;">AvantTek  --  All About Advanced Technology</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+    <div class="container">
+        <!-- check git -->
+        <div class="row">
+            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.1s">
+                <div class="iconbox">
+                    <a href="#" class="icn-1">Platforms</a>
+                </div>
+                <p class="icntitle">Platforms</p>
+                <p class="icnp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu velit vehicula feugiat. </p>
+            </div><!-- /col-md-4 -->
+            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.2s">
+                <div class="iconbox">
+                    <a href="#" class="icn-2">Modern Web Solutions</a>
+                </div>
+                <p class="icntitle">Modern Web Solutions</p>
+                <p class="icnp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu velit vehicula feugiat. </p>
+            </div><!-- /col-md-4 -->
+            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.3s">
+                <div class="iconbox">
+                    <a href="#" class="icn-3">Distributed Apps</a>
+                </div>
+                <p class="icntitle">Distributed Apps</p>
+                <p class="icnp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu velit vehicula feugiat. </p>
+            </div>
+        </div><!-- /row -->
+    </div>
+    <!-- /container -->
+    <!-- /more-features -->
+</section>
+<!--////////// NEWSLETTER SECTION ////////// -->
+<section id="newsletter" ng-app="app-email">
+    <div class="container wow animated fadeInDown" ng-controller="emailController as vm">
+        <div class="row">
+            <div class="col-md-12"></div>
+            <h3>Inviting You To The Launch of AvantTek.com</h3>
+            <div class="container-fluid">        </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div ID="emailtest" style="padding-top: 75px" class="ng-app">
+                        <form novalidate name="myForm" class="form-inline" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
+                            <input type="email" name="input" class="input-lg" ng-model="vm.email.text" required>
+                            <button ng-click='validateEmail()' type="submit" class="btn btn-primary">Send Me Updates</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="emErr" class="col-md-12" ng-show="myForm.input.$invalid && myForm.input.$dirty" style="font-size: 20px">A valid email is required</div>
+                @*<span ng-show="myForm.input.$invalid && myForm.input.$dirty ">A valid email is required</span>*@
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--////////// FOOTER SECTION ////////// -->
+<footer>
+    <p>
+        Copyright © 2015 Flati. Made with <i class="fa fa-heart footer-heart"></i> by Themeberry
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
+</script>

@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex
+<!--/////////// HEADER SECTION //
+
+////////-->
+
+<section id="intro" class="intro-well wow d-flex flex-row animated bounceIn justify-content-center" style="padding-top: 60px;padding-bottom: 65px;">
+    <div class="d-flex flex-column justify-content-center">
+        <h1>Hello AvantTek !!</h1>
+        <!-- <h1>Adventures in Digital Transformation<h1> -->
+        <div id="avantCust" class="d-flex d-row" style="margin-top: 20px;margin-bottom: 7px;">Adventures in Digital Transformation</div>
+
+    </div>
+</section>
+<section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Digital Transformation >></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link border border-dark" style="border-width:medium;font-size:18px; font-weight:600; color:black;" href='@Url.Action("Index","Home")'>Modern Web...<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link border border-dark" style="border-width:medium;font-size:18px; font-weight:600; color:black;" href='@Url.Action("Solution","Home")'>Distributed Ledger Platforms...</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+<!-- LAUNCH VERSION COMMENT START -->
+<!--////////// FEATURES SECTION ////////// -->
+<!-- ================================================================ -->
+<!-- **************************************************************** -->
+<section id="features" style="padding-bottom: 50px">
+    <div style="visibility: visible; animation-name: fadeIn;" class="d-flex flex-column justify-content-center wow fadeIn  animated">
+        <p class="icntitle" style="padding-bottom:0; margin-bottom:5px; font-size: 38px">The Modern Web</p>
+        <p class="icntitle"> Platforms, Frameworks, &amp; Tools</p>
+    </div>
+    <!-- /container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 wow fadeInLeft animated" data-wow-delay="0.1s" style="font-size: 15px">
+                <div class="iconbox">
+                    <a href="#" class="icn-1">Platforms</a>
+                </div>
+                <p class="icntitle">Cloud Platforms</p>
+                <p class="icnp col">
+                    The growth of cloud platform adoption continues to accelerate rapidly.
+                    This constant innovation in ways to deliver on&#8209;demand access to scalable computing is a foundation of the digital eco&#8209;sphere
+                </p>
+            </div><!-- /col-md-4 -->
+            <div class="col-md-4 col-sm-12 wow fadeInLeft animated" data-wow-delay="0.1s" style="font-size: 15px">
+                <div class="iconbox">
+                    <a href="#" class="icn-2">Modern Web Solutions</a>
+                </div>
+                <p class="icntitle">Modern Web ToolKits</p>
+                <p class="icnp col">
+                    Platforms, languages, operating systems,<br />and developer tools have evolved in exciting ways. Today's modern web is all about
+                    richly functional front&#8209;ends connected to powerful servers. They are cloud&#8209;  hosted and scalable, cross&#8209;platform, and modular.
+                </p>
+            </div><!-- /col-md-4 -->
+            <!-- /col-md-4 -->
+            <div class="col-md-4 col-sm-12 wow fadeInLeft animated" data-wow-delay="0.1s" style="font-size: 15px">
+                <div class="iconbox">
+                    <a href="#" class="icn-3">D&#8209;App Frameworks</a>
+                </div>
+                <p class="icntitle">D&#8209;App Frameworks</p>
+                <p class="icnp col" style="margin-bottom: 20px;">D&#8209;Apps are "smart contract" code modules integrated into blockchain ledgers to enable solutions beyond legacy blockchain crypto&#8209;currency exchanges. In turn, they benefit from blockchain fault tolerant networks, cryptography&#8209;based security, and immutable transaction ledgers.</p>
+            </div>
+        </div><!-- /row-->
+    </div>
+</section>
+<section id="click-it" style="background-color: #df4c3c; padding-top: 30px; padding-bottom: 20px;">
+    <div class="container">
+        @* <span class="d-flex flex-col justify-content-center white-font pt-5"id="header-1">Platforms for Transformation</span> *@
+        <span class="d-flex icntitle flex-row justify-content-center icntitle p m-5" style="font-size: 38px;">Platforms for Transformation</span>
+    </div>
+    <div class="container">
+        <span class="d-flex flex-row justify-content-center icntitle p-3 mb-3" style="color: white">The AvantTek Solution</span>
+    </div>
+    <div class="container">
+        <span class="d-flex flex-row justify-content-center icntitle p-3 mb-5" style="color: white">De-Centralized Application Platforms</span>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center p-3">
+            <a href='@Url.Action("Solution","Home")'>
+                <img src="~/Red/img/brightIdea03.png" title="Core Components" data-pin-nopin="true" />
+            </a>
+        </div>
+    </div>
+    <div class="container p">
+        <div class="d-flex justify-content-center p-3" style="color: white ; font-size: 19px;">
+            <a style="color: white" href='@Url.Action("Solution","Home")'>
+                ...more
+                @* <img src="~/Red/img/brightIdea03.png" title="Core Components" data-pin-nopin="true" /> *@
+            </a>
+        </div>
+    </div>
+</section>
+<!--////////// NEWSLE SECTIO ////////// -->
+<!--////////// DOWNLOAD SECTION ////////// -->
+
+<footer class="d-flex justify-content-center" style="padding-top: 25px; padding-bottom: 25px">
+    <p>
+        AvantTek Solutions Inc.  New York, NY
+    </p>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
+</script>

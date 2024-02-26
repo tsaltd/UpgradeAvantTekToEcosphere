@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex
+<!--/////////// HEADER SECTION //
+
+////////-->
+
+<section id="intro" class="intro-well wow d-flex flex-row justify-content-center" style="padding-top: 60px;padding-bottom: 65px;">
+    <div class="d-flex flex-column justify-content-center">
+        <h1>Stay Tuned AvantTek !!</h1>
+        <!-- <h1>Adventures in Digital Transformation<h1> -->
+        <div id="avantCust" class="d-flex d-row" style="margin-top: 20px;margin-bottom: 7px;">Adventures in Digital Transformation</div>
+
+    </div>
+</section>
+<!-- LAUNCH VERSION COMMENT START -->
+<!--////////// FEATURES SECTION ////////// -->
+<!-- ================================================================ -->
+<!-- **************************************************************** -->
+<section id="features" style="padding-bottom: 50px">
+    <div style="visibility: visible; animation-name: fadeIn" class="d-flex flex-column justify-content-center wow fadeIn  animated;">
+        <p class="icntitle" style="padding-bottom:0; margin-bottom:5px; font-size: 38px">The Modern Web</p>
+        <p class="icntitle"> Platforms, Frameworks, &amp; Tools</p>
+    </div>
+    <!-- /container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 wow fadeInLeft animated" data-wow-delay="0.1s" style="font-size: 15px">
+                <div class="iconbox">
+                    <a href="#" class="icn-1">Platforms</a>
+                </div>
+                <p class="icntitle">Platforms</p>
+                <p class="icnp col">
+                    The growth of cloud platform adoption continues to accelerate rapidly.
+                    This constant innovation in ways to deliver on&#8209;demand access to scalable computing is a foundation of the digital eco&#8209;sphere
+                </p>
+            </div><!-- /col-md-4 -->
+            <div class="col-md-4 col-sm-12 wow fadeInLeft animated" data-wow-delay="0.1s" style="font-size: 15px">
+                <div class="iconbox">
+                    <a href="#" class="icn-2">Modern Web Solutions</a>
+                </div>
+                <p class="icntitle">Modern Web Solutions</p>
+                <p class="icnp col">
+                    Platforms, languages, operating systems,<br />and developer tools have evolved in exciting ways. Today's modern web is all about
+                    richly functional front&#8209;ends connected to powerful servers. They are cloud&#8209;  hosted and scalable, cross&#8209;platform, and modular.
+                </p>
+            </div><!-- /col-md-4 -->
+            <!-- /col-md-4 -->
+            <div class="col-md-4 col-sm-12 wow fadeInLeft animated" data-wow-delay="0.1s" style="font-size: 15px">
+                <div class="iconbox">
+                    <a href="#" class="icn-3">Distributed Apps</a>
+                </div>
+                <p class="icntitle">Distributed Apps</p>
+                <p class="icnp col">D&#8209;Apps are "smart contract" code modules integrated into blockchain platforms. They create solutions beyond conventional crypto&#8209;currency exchanges. In turn, D&#8209;apps benefit from the blockchain fault tolerant network, cryptography&#8209;based security features, and immutable distributed transaction ledgers.</p>
+            </div>
+        </div><!-- /row-->
+    </div>
+</section>
+<!--////////// NEWSLETTER SECTION ////////// -->
+<section id="newsletter">
+    <div class="d-flex justify-content-center p-5 img-fluid" data-wow-delay="0">
+        <img src="~/Red/img/brightIdea$01.png" alt="Ethereum" />
+    </div>
+    <h3 class="d-flex flex-row justify-content-center">
+            <a asp-controller="Home" asp-action="solution" asp-protocol="http" class="btn btn-primary" STYLE="border-radius: 8px; border: 2px solid rgba(0, 70, 147, 0.75); COLOR: WHITE;  BACKGROUND-COLOR: #34495E"  type="submit">Get the Solution</a>
+        </h3>
+</section>
+<!--////////// NEWSLETTER SECTIO ////////// -->
+<!--////////// DOWNLOAD SECTION ////////// -->
+<footer style="padding-top: 32px">
+    <p>
+        <i class="fa fa-link"></i>
+        AvantTek Solutions Inc.  New York, NY
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
+</script>

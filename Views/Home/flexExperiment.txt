@@ -1,0 +1,89 @@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex
+<!--/////////// HEADER SECTION //////////-->
+<section id="intro" class="intro-well wow animated bounceIn">
+    <div class="d-flex flex-column">
+        <div class="d-flex flex-column">
+            <h1 class="tester">Hello AvantTek !!</h1>
+            <h2 style="margin-top: 20px;margin-bottom: 7px;">Adventures in Digital Transformation</h2>  
+            <h2 style="margin-bottom: 25px; margin-top: 0px;">Frameworks  &amp;  Tools --  Overviews  &  Drill-Downs</h2> 
+        </div>
+     </div> 
+</section>
+<!-- LAUNCH VERSION COMMENT START -->
+<!--////////// FEATURES SECTION ////////// -->
+
+<section id="features">
+    <div style="visibility: visible; animation-name: fadeIn;" class="d-flex wow fadeIn  animated">
+        <h1>Exploring the Frontiers of Modern Web Technologies</h1>
+    </div>
+    <!-- /container -->
+    <div class="d-flex">
+            <div class="d-flex flex-column fadeInLeft animated" data-wow-delay="0.1s">
+                <div class="iconbox">
+                    <a href="#" class="icn-1">Platforms</a>
+                </div>
+                <p class="icntitle">Platforms</p>
+                <p class="icnp">Growth of cloud adoption continues to accelerate rapidly. The constant innovation in ways to deliver on-demand access to scalable computing is a foundation of the digital eco-sphere</p>
+            </div><!-- /col-md-4 -->
+             <div class="wow flex-column fadeInLeft animated" data-wow-delay="0.1s">
+                <div class="iconbox">
+                    <a href="#" class="icn-1">Modern Web Solutions</a>
+                </div>
+                <p class="icntitle">Modern Web Solutions</p>
+                <p class="icnp">Platforms, languages, operating systems, and developer tools have evolved and matured in exciting ways.  Today's modern web is all about richly functional front-ends connected to powerful servers. They are cloud-hosted and scalable, cross-platform, and modular.</p>
+            </div><!-- /col-md-4 -->
+            <!-- /col-md-4 -->
+            <div class="d-flex flex-column wow fadeInLeft animated" data-wow-delay="0.3s">
+                <div class="iconbox flex-column">
+                    <a href="#" class="icn-3">Distributed Apps</a>
+                </div>
+                <p class="icntitle">Distributed Apps</p>
+                <p class="icnp">D-Apps are "smart contract" code modules integrated into blockchain platforms.   They create solutions beyond conventional crypto-currency exchanges.  In turn,  D-apps benefit from the blockchain fault tolerant network, cryptography-based security features, and the immutable distributed transaction ledger.</p>
+            </div>
+        </div><!-- /row-->
+   <!-- /container -->
+</section>
+    <!--////////// NEWSLETTER SECTION ////////// -->
+<!--////////// NEWSLETTER SECTION ////////// -->
+<section id="newsletter" ng-app="app-email">
+    <div class="container wow animated fadeInDown" ng-controller="emailController as vm">
+        <div class="row">
+            <div class="col-md-12"></div>
+            <h3>Inviting You To The Launch of AvantTek.com -- Come Back for More</h3>
+            <div class="container-fluid">        </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div ID="emailtest" style="padding-top: 75px" class="ng-app">
+                        <form novalidate name="myForm" class="form-inline" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
+                            <input type="email" name="input" class="input-lg" ng-model="vm.email.text" required>
+                            <button ng-click='validateEmail()' type="submit" class="btn btn-primary">Send Me Updates</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="emErr" class="col-md-12" ng-show="myForm.input.$invalid && myForm.input.$dirty" style="font-size: 20px">A valid email is required</div>
+                @*<span ng-show="myForm.input.$invalid && myForm.input.$dirty ">A valid email is required</span>*@
+            </div>
+        </div>
+    </div>
+</section>
+<!--////////// DOWNLOAD SECTION ////////// -->
+
+<footer>
+    <p>
+        Copyright © 2015 Flati. Made with <i class="fa fa-heart footer-heart"></i> by Themeberry
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
+</script>

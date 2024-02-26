@@ -1,0 +1,139 @@
+﻿
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: white;
+    color: Blue;
+}
+
+#header-2 > nav > div > div.navbar-collapse.navbar-ex1-collapse.collapse.in > ul > li > a {
+    background-color: peru;
+    color: black;
+}
+
+
+#main > div:nth-child(2) > section > div > div {
+    margin-top: 170px;
+}
+
+#Row1Container > div.col-xs-12.col-sm-8.header-info-wrapper {
+    width: 50%;
+}
+#Row1Container > div.col-xs-12.col-sm-4.social-link-wrapper {
+    width: 50%;
+}
+
+#header-2 > nav > div > div.navbar-header > a > span {
+    color: maroon;
+}
+
+#header-2 > nav > div > div.navbar-header > button {
+
+    padding-top: 10px;
+    padding-bottom: 9px;
+    margin-top: 30px;
+}
+
+#header-2 > nav > div > div.navbar-collapse.navbar-ex1-collapse.collapse.in > ul > li > a {
+    background-color: silver;
+
+}
+#header-2 > nav > div > div.navbar-collapse.navbar-ex1-collapse.collapse.in > ul > li.dropdown.open > ul > li > a {
+    background-color: maroon;
+    color: white;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: red;
+    background-image: none;
+    color: green;
+}
+#header-2 > nav > div > div.navbar-collapse.navbar-ex1-collapse.collapse.in {
+    color: green;
+}
+#header-2 > nav > div > div.navbar-collapse.navbar-ex1-collapse.collapse.in > ul > li.dropdown.open > ul > li > a
+
+
+/*Pad Body Below Navbaos*/
+
+
+.BelowNav01 {
+    padding-top: 150px;
+}
+
+/*Style the Microsoft Headline*/
+
+.Headline01 {
+   
+    font-family: wf_segoe-ui_semilight,wf_segoe-ui_light,wf_segoe-ui_normal,'Segoe UI Semilight','Segoe UI Light','Segoe UI',Arial,sans-serif !important;
+    font-weight: 300;font-size: 32px;
+    text-align: center;
+    /*border-bottom-width: 100px;*/
+    padding-bottom: 45px;
+    padding-top: 65px;
+    line-height: 1;
+}
+
+.cross {
+    position: relative;
+    display: inline-block;
+}
+.cross::before, .cross::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.cross::before {
+    border-bottom: 2px solid rgb(85, 85, 85);
+    -webkit-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+}
+.cross::after {
+    border-bottom: 2px solid rgb(85, 85, 85);
+
+
+    -webkit-transform: skewY(10deg);
+    transform: skewY(10deg);
+}
+/*SOCIAL NAVBAR*/
+
+#Row1Container > div {
+    /*padding-left: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;*/
+    font-family: 'Montserrat',sans-serif;
+    background-color: #2c3e50;
+    padding: 10px 0;
+    color: #ecf0f1;
+    font-family: 'Montserrat',sans-serif;
+}
+
+    #Header-1{
+    background-color: #2c3e50;
+    padding: 10px 0;
+    color: #ecf0f1;
+    font-family: 'Montserrat',sans-serif;
+
+
+    }
+
+/*Navbar*/
+
+/*.dropdown-menu > li > a {*/
+#header-2 > nav > div > div.navbar-collapse.navbar-ex1-collapse.collapse > ul > li.dropdown.open > ul  > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: white;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a {
+    padding: 10px 20px;
+    color: #ecf0f1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}

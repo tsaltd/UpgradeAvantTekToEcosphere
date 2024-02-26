@@ -1,0 +1,24 @@
+{ // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "test",
+            "path": "wwwroot/lib/bootstrap/",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "css",
+            "path": "obj/Debug/net461/win7-x86/PubTmp/Out/wwwroot/lib/bootstrap/",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "css",
+            "path": "obj/Release/net471/win7-x86/PubTmp/Out/wwwroot/lib/bootstrap/",
+            "problemMatcher": []
+        }
+    ]
+}

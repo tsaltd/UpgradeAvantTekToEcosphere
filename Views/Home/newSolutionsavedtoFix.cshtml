@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex;
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+</style>
+
+<section id="intro" style="padding-top: 35px;padding-bottom: 50px;">
+    <div class="d-flex justify-content-center" >
+        <h1 style="color: black; padding-bottom: 10px;">DeCentralized Platfoms</h1>
+    </div>
+    <div id="avantCust2" class="d-flex justify-content-center pb-0 pr-1 pl-1 pt-1" style="color: black;">
+            For Creating
+    </div>
+    <div id="avantCust2" class="d-flex justify-content-center p-1 pr-1 pb-0 pt-1" style="color: black;">
+            Digital EcoSpheres
+    </div>
+</section>
+
+<section style="padding-top: 10px">
+     <div class="d-flex justify-content-center">
+       
+        <p class="icntitle" style="color: #00bcf2; font-weight: 500; padding-top: 20px; margin-bottom:5px; font-size: 38px">Distributed Ledgers</p>
+    </div>d
+</section>
+        @* <div class="d-flex icntitle =flex-row justify-content-centepadding-top: 20px;cntitle m-5 p-5" style="font-size: 38px">Distributed Ledger</span> *@
+    <section id="newPyra">
+    <div class="d-flex">
+        <div class="w-75 justify-content-center m-5">
+            <picture class="d-flex flex-row justify-content-center">
+                <source media="(min-width: 700px)" srcset="~/Red/img/WordCloud.png">
+                <source media="(min-width: 200px)" srcset="~/Red/img/mobileWordCloud.PNG">
+                <img src="~/Red/img/mobileWordCloud.PNG" class="img-fluid" alt="Tools"/>
+            </picture>
+            <picture class="d-flex flex-row justify-content-center">
+                <source media="(min-width: 700px)" srcset="~/Red/img/ether.PNG">
+                <source media="(min-width: 200px)" srcset="~/Red/img/mobileEther.PNG">
+                <img src="~/Red/img/mobileEther.PNG" alt="Ethereum" />
+            </picture>
+            <picture class="d-flex flex-row justify-content-center">
+                <source media="(min-width: 700px)" srcset="~/Red/img/Azure.png">
+                <source media="(min-width: 200px)" srcset="~/Red/img/mobileAzure.PNG">
+                <img src="~/Red/img/mobileAzure.PNG" alt="Cloudy">
+            </picture>
+        </div>
+        <div class="d-flex align-content-center w-25">
+            <h4>Title Section</h4>
+        </div>
+        @* <div class="d-flex flex-row align-content-center">
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        </div> *@
+    </div>
+</section>
+<footer class="d-flex justify-content-center" style="padding-top: 25px; padding-bottom: 25px">
+    <p>
+        AvantTek Solutions Inc.  New York, NY
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
+</script>

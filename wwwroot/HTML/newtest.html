@@ -1,0 +1,161 @@
+﻿<html>
+<head>
+    <style type="text/css">
+        @charset "UTF-8";
+
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak,
+        .ng-hide:not(.ng-hide-animate) {display: none !important;}
+        ng\:form {
+            display: block;
+        }
+        .ng-animate-shim {
+            visibility: hidden;
+        }
+        .ng-anchor {
+            position: absolute;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AvantTek - Info Portal Alpha</title>
+    <link href="/red/css/style.css" rel="stylesheet">
+    <link href="/Red/css/errorStyles.css" rel="stylesheet">
+    <title>video</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="../lib/angular/angular.js"></script>
+    <!--<script src="/js/avant-app-email.js"></script>-->
+    <script src="../js/avant-controller-email.js"></script>
+    <script src="../js/avant-app-email.js"></script>
+    <style piggy-ext="" data-styled-version="4.3.2"></style>
+</head>
+<body>
+    <div>
+        <!--/////////// HEADER SECTION //////////-->
+        <section id="intro">
+            <div class="container" style="padding-bottom: 15px;">
+                <div class="intro-well wow animated bounceIn">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Hello AvantTek !!</h1>
+                            <h2>tester2 collaboration space for technology news and views is on the way</h2>
+                            <a class="btn btn-info" href="/Home/AvantTekAlpha" id="HomeLink">To The Portal</a>;
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /container -->
+        </section>
+        <!-- LAUNCH VERSION COMMENT START -->
+        <!--////////// FEATURES SECTION ////////// -->
+        <section id="features">
+            <div style="visibility: visible; animation-name: fadeIn;" class="container wow fadeIn  animated">
+                <h1>How It Works?</h1>
+                <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque faucibus risus non iaculis.
+                    Fusce a augue ante, pellentesque pretium erat. Fusce in turpis in velit tempor pretium. Integer a
+                    leo libero.
+                </h2>
+            </div>
+            <!-- /container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.1s">
+                        <div class="iconbox">
+                            <a href="#" class="icn-1">Devices</a>
+                        </div>
+                        <p class="icntitle">Applications</p>
+                        <p class="icnp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu
+                            velit vehicula feugiat.
+                        </p>
+                    </div><!-- /col-md-4 -->
+                    <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.2s">
+                        <div class="iconbox">
+                            <a href="#" class="icn-2">Intelligence</a>
+                        </div>
+                        <p class="icntitle">Intelligence</p>
+                        <p class="icnp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu
+                            velit vehicula feugiat.
+                        </p>
+                    </div><!-- /col-md-4 -->
+                    <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.3s">
+                        <div class="iconbox">
+                            <a href="#" class="icn-3">App of Year</a>
+                        </div>
+                        <p class="icntitle">Platforms</p>
+                        <p class="icnp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu
+                            velit vehicula feugiat.
+                        </p>
+                    </div>
+                </div><!-- /col-md-4 -->
+            </div><!-- /row -->
+            <!-- /container -->
+            <!-- /more-features -->
+        </section>
+        <!--////////// NEWSLETTER SECTION ////////// -->
+        <section id="newsletter" ng-app="app-email" class="ng-scope">
+            <div class="container wow animated fadeInDown ng-scope" ng-controller="emailController as vm">
+                <div class="row">
+                    <div class="col-md-12"></div>
+                    <h3>Inviting You To The Launch of AvantTek.com</h3>
+                    <div class="container-fluid">
+                    <div class="row">
+                        <!--<div class="col-md-12">-->
+                        <div id="emailtest" style="padding-top: 75px" class="ng-app">
+                            <div classs=col-sm></div>
+                            <div class=col-sm>
+                                <form novalidate="" name="myForm"
+                                      class="form-inline ng-pristine ng-valid ng-valid-email ng-valid-required"
+                                      ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
+                                    <input type="email" name="input"
+                                           class="input-lg ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-email ng-valid-required"
+                                           ng-model="vm.email.text" required="">
+                                    <button ng-click="validateEmail()" type="submit" class="btn btn-primary">
+                                        Send Me Updates
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class=col-sm></div>
+                    </div>
+                    </div>
+                   </div>
+                </div>
+            </section>
+                                               
+                        <!--////////// FOOTER SECTION ////////// -->
+                        <div>
+
+                        </div>
+                        <footer>
+                            <p>
+                                Copyright © 2015 Flati. Made with <i class="fa fa-heart footer-heart"></i> by Themeberry
+                            </p>
+                        </footer>
+                        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                        <script>
+                            $(function () {
+                                $(window).on("load resize", function () {
+                                    $(".fill-screen").css("height", window.innerHeight);
+                                });
+                            });
+                        </script>
+         </div>
+</body>
+</html>

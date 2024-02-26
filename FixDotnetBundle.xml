@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--NO XML VERSION FOR PROJECT FILE-->
+
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <!--<PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>Workspace</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>Workspace</PackageId>
+    <ApplicationIcon />
+    <StartupObject />
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <UserSecretsId>4ca81b6d-7b40-496a-a8e6-b5ce9f37a867</UserSecretsId>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\API\MessageController.cs" />
+    <Compile Remove="ViewModels\SendGridMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Home\tester.cshtml" />
+    <Content Remove="wwwroot\lib\angular\README.md" />
+  </ItemGroup>
+  <!--<Target Name="PrepublishScript" BeforeTargets="PrepareForPublish">
+   -->
+  <!--<Exec Command="bower install" />-->
+  <!--
+    <Exec Command="dotnet bundle" />
+  </Target>-->
+  <!--<ItemGroup>
+    <DotNetCliToolReference Include="BundlerMinifier.Core" Version="2.2.301" />
+  </ItemGroup>-->
+  <ItemGroup>
+    <Folder Include="Controllers\API\" />
+    <Folder Include="wwwroot\css\FlexBox\twitter-bootstrap\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-rc1.19457.4" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0-preview.6.20305.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0-preview.6.20305.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+</Project>
+

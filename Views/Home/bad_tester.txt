@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex
+<!--/////////// HEADER SECTION //////////-->
+<section id="intro" style="padding-bottom: 0px;">
+    <div class="container" style="padding-top: 0; padding-bottom: 0px;">
+        <div class="intro-well wow animated bounceIn" style="
+        padding-top: 0px;
+        padding-bottom: 0;
+        top: 0px;
+        margin-top: 50px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Hello AvantTek !!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".col-sm-6">
+                <h5 style="text-align: center;padding-bottom: 25px;">Digital Transformation: Frameworks and Tools</h5>
+            </div>
+        </div>
+    </div>
+</section><!-- LAUNCH VERSION COMMENT START -->
+<!--////////// FEATURES SECTION ////////// -->
+<section id="features">
+    <div style="visibility: visible; animation-name: fadeIn;" class="container wow fadeIn  animated">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="h2a">Frontiers of Technology Moving Fast !!!</div>
+                    <h2 style="padding-bottom: 35px;">Frontiers of Technology Moving Fast !!!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 style="padding-bottom: 35px;">AvantTek  --  All About Advanced Technology</h1>
+                </div>
+            </div><div class="row">
+                <div class="col">
+                    <h1 style="padding-bottom: 35px;">AvantTek  --  All About Advanced Technology</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+    <div class="container">
+        <!-- check git -->
+        <div class="row">
+            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.1s">
+                <div class="iconbox">
+                    <a href="#" class="icn-1">Platforms</a>
+                </div>
+                <p class="icntitle">Platforms</p>
+                <p class="icnp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu velit vehicula feugiat. </p>
+            </div><!-- /col-md-4 -->
+            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.2s">
+                <div class="iconbox">
+                    <a href="#" class="icn-2">Modern Web Solutions</a>
+                </div>
+                <p class="icntitle">Modern Web Solutions</p>
+                <p class="icnp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu velit vehicula feugiat. </p>
+            </div><!-- /col-md-4 -->
+            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.3s">
+                <div class="iconbox">
+                    <a href="#" class="icn-3">Distributed Apps</a>
+                </div>
+                <p class="icntitle">Distributed Apps</p>
+                <p class="icnp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu velit vehicula feugiat. </p>
+            </div>
+        </div><!-- /row -->
+    </div>
+    <!-- /container -->
+    <!-- /more-features -->
+</section>
+<!--////////// NEWSLETTER SECTION ////////// -->
+<section id="newsletter">
+    <div class="container wow animated fadeInDown" ng-controller="emailController as vm">
+        <div class="row">
+            <div class="col-md-12"></div>
+            <h3>Inviting You To The Launch of AvantTek.com</h3>
+    <div class="container-fluid"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="padding-bottom: 35px;">AvantTek  --  All About Advanced Technology</h1>
+                </div>
+            </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="emErr" class="col-md-12" ng-show="myForm.input.$invalid && myForm.input.$dirty" style="font-size: 20px">A valid email is required</div>
+                @*<span ng-show="myForm.input.$invalid && myForm.input.$dirty ">A valid email is required</span>*@
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--////////// FOOTER SECTION ////////// -->
+<footer>
+    <p>
+        Copyright © 2015 Flati. Made with <i class="fa fa-heart footer-heart"></i> by Themeberry
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
+</script>
