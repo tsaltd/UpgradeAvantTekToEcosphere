@@ -21,6 +21,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Home\tester.cshtml" />
+    <Content Remove="wwwroot\images\PlatformMobile.png" />
     <Content Remove="wwwroot\lib\angular\README.md" />
   </ItemGroup>
   <!--<Target Name="PrepublishScript" BeforeTargets="PrepareForPublish">
