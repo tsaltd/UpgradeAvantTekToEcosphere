@@ -13,7 +13,7 @@ namespace Workspace.Controllers
             // vmHomeIndex model = new vmHomeIndex();
             vmHomeIndex model = new vmHomeIndex();
 
-            
+
             //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
             //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
             return View(model);
@@ -35,7 +35,7 @@ namespace Workspace.Controllers
             // vmHomeIndex model = new vmHomeIndex();
             vmHomeIndex model = new vmHomeIndex();
 
-            
+
             //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
             //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
             return View(model);
@@ -61,12 +61,12 @@ namespace Workspace.Controllers
 
         public IActionResult newsolution()
         {
-   
+
             vmHomeIndex model = new vmHomeIndex();
 
-        
-        //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
-        //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
+
+            //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
+            //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
 
             return View(model);
         }
@@ -76,33 +76,33 @@ namespace Workspace.Controllers
 
             return View(model);
         }
-    public IActionResult Devsolution()
+        public IActionResult Devsolution()
         {
             vmHomeIndex model = new vmHomeIndex();
             return View(model);
         }
-    //public IActionResult solutionv1()
-    public IActionResult finalsolution()
-    
-        {
-            vmHomeIndex model = new vmHomeIndex();
-    
-        //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
-        //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
+        //public IActionResult solutionv1()
+        public IActionResult finalsolution()
 
-            return View(model);
-        }
-    public IActionResult tester()
-        {
-            vmHomeIndex model = new vmHomeIndex();
-            return View(model);
-        }
-       // public IActionResult Portal()
-    public IActionResult tc()
         {
             vmHomeIndex model = new vmHomeIndex();
 
-          
+            //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
+            //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
+
+            return View(model);
+        }
+        public IActionResult tester()
+        {
+            vmHomeIndex model = new vmHomeIndex();
+            return View(model);
+        }
+        // public IActionResult Portal()
+        public IActionResult tc()
+        {
+            vmHomeIndex model = new vmHomeIndex();
+
+
             //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
             //model.HtmlSection = System.Net.WebUtility.HtmlDecode(////);
 
@@ -112,23 +112,24 @@ namespace Workspace.Controllers
 
             return View(model);
         }
-    public IActionResult solutionold()
-        {   vmHomeIndex model = new vmHomeIndex();
-            return View();     
-        }
-     public IActionResult alpha()
+        public IActionResult solutionold()
         {
-            return View();     
+            vmHomeIndex model = new vmHomeIndex();
+            return View();
         }
-    public IActionResult AvantTekAlpha()
+        public IActionResult alpha()
         {
             return View();
         }
-    public IActionResult About()
+        public IActionResult AvantTekAlpha()
         {
             return View();
         }
-    public IActionResult newSolutionsaved()
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult newSolutionsaved()
         {
             return View();
         }
@@ -137,13 +138,13 @@ namespace Workspace.Controllers
             return View();
         }
         public IActionResult solutionAlpha()
-    {
-        return View();
-    }
+        {
+            return View();
+        }
         public IActionResult DLTComponents()
-    {
-        return View();
-    }
+        {
+            return View();
+        }
         public IActionResult intro()
         {
             return View();

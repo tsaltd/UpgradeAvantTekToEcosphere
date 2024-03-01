@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Workspace.Models;
 namespace Workspace.Controllers
 {
@@ -20,10 +19,10 @@ namespace Workspace.Controllers
         public IActionResult HelloHello()
         {
 
-            Utility ut = new Utility(); 
-             
+            Utility ut = new Utility();
+
             ut.Flag = 2;
-            
+
             return View(ut);
         }
         public IActionResult NavbarFix()
